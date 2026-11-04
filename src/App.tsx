@@ -282,9 +282,18 @@ function App() {
           <div className="mx-auto grid max-w-7xl gap-14 lg:grid-cols-[.7fr_1.3fr] lg:items-center lg:gap-24">
             <div><p className="eyebrow text-red-800">Come on over</p><h2 className="section-title text-stone-900">Find <em>Us</em></h2><div className="mt-10 space-y-7"><div className="contact-row"><MapPin className="text-red-700" size={21} /><div><p className="label text-stone-500">Address</p><p className="text-stone-900">426 Grand St<br />Jersey City, NJ 07302</p></div></div><div className="contact-row"><Phone className="text-red-700" size={21} /><div><p className="label text-stone-500">Phone</p><a href="tel:+12014331388" className="text-stone-900 hover:text-red-700">(201) 433-1388</a></div></div><div className="contact-row"><Clock3 className="text-red-700" size={21} /><div><p className="label text-stone-500">Hours</p><p className="text-stone-900">Mon–Thu: 11:00 AM – 10:30 PM<br/>Fri–Sat: 11:00 AM – 11:30 PM<br/>Sunday: Closed</p></div></div></div><a href="tel:+12014331388" className="mt-10 inline-flex items-center gap-3 border-b-2 border-red-700 pb-2 text-sm font-bold uppercase tracking-[0.15em] text-red-700 hover:gap-5">Call ahead <ArrowRight size={16} /></a></div>
             
-            {/* MAP IFRAME PLACEHOLDER */}
-            <div className="relative w-full min-h-[450px] rounded-lg overflow-hidden shadow-md border border-stone-200 bg-stone-100 flex items-center justify-center">
-               <span className="text-stone-500 font-semibold uppercase tracking-widest text-sm">[ GOOGLE MAPS EMBED PLACEHOLDER ]</span>
+            {/* MAP IFRAME */}
+            <div className="relative w-full min-h-[450px] rounded-lg overflow-hidden shadow-md border border-stone-200 bg-stone-100">
+              <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.954187524771!2d-74.0532686!3d40.719025!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c250b7dc3d264b%3A0x51376e43169837ad!2sGreat%20Wall!5e0!3m2!1sen!2sus!4v1793833993247!5m2!1sen!2sus" 
+                width="100%" 
+                height="100%" 
+                style={{ border: 0, pointerEvents: 'auto' }} 
+                allowFullScreen 
+                loading="lazy" 
+                className="absolute inset-0 w-full h-full"
+                title="Great Wall Location"
+              ></iframe>
             </div>
 
           </div>
