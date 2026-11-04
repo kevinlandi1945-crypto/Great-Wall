@@ -217,11 +217,10 @@ function App() {
       <main id="top">
         <section className="relative flex min-h-screen items-end bg-stone-100 pt-[76px] text-stone-900">
           
-          {/* HERO IMAGE */}
-          <img 
-            src="/interior.jpg" 
-            alt="Great Wall interior" 
-            className="absolute inset-0 w-full h-full object-cover opacity-30" 
+          {/* HERO IMAGE - CSS BACKGROUND FORCE */}
+          <div 
+            className="absolute inset-0 w-full h-full bg-cover bg-center bg-no-repeat opacity-30"
+            style={{ backgroundImage: "url('/interior.jpg')" }}
           />
 
           <div className="absolute inset-y-0 left-0 right-0 bg-gradient-to-r from-stone-100 via-stone-100/95 to-transparent lg:right-[28%]" />
@@ -268,11 +267,10 @@ function App() {
           <div className="mx-auto grid max-w-7xl items-center gap-14 lg:grid-cols-[.85fr_1.15fr] lg:gap-24">
             <div><p className="eyebrow text-red-800">A neighborhood staple</p><h2 className="section-title text-stone-900">Made for <em>the community</em></h2><div className="mt-8 space-y-5 text-[17px] leading-[1.75] text-stone-700"><p>Great Wall has been serving the Jersey City community with authentic Chinese cuisine.</p><p>We combine traditional family recipes with fresh, high-quality ingredients to bring you the best Chinese food in the Heights.</p><p>Whether you're grabbing a quick lunch special or ordering dinner for the family, we cook every dish to order.</p></div><div className="mt-9 flex items-center gap-4"><span className="flex h-12 w-12 items-center justify-center rounded-full bg-red-700 text-white"><Star size={19} fill="currentColor" /></span><div><p className="font-display text-lg text-stone-900">Great Wall</p><p className="text-xs uppercase tracking-[0.16em] text-stone-500">Jersey City, NJ</p></div></div></div>
             
-            {/* ABOUT SECTION IMAGE */}
-            <img 
-              src="/food.jpg" 
-              alt="Chinese food" 
-              className="w-full aspect-[4/3] min-h-[360px] lg:min-h-[520px] object-cover rounded-lg shadow-md" 
+            {/* ABOUT SECTION IMAGE - CSS BACKGROUND FORCE */}
+            <div 
+              className="w-full aspect-[4/3] min-h-[360px] lg:min-h-[520px] rounded-lg shadow-md bg-cover bg-center"
+              style={{ backgroundImage: "url('/food.jpg')" }}
             />
 
           </div>
